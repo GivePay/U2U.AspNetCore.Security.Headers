@@ -32,7 +32,7 @@ namespace TestWebSite
       // Add framework services.
       services.AddMvc();
       services.AddNameOf();
-      services.AddMarkdown();
+      //services.AddMarkdown();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,23 +68,23 @@ namespace TestWebSite
       {
         // builder.SetHeader("Header", "Value");
 
-        builder.SetStrictTransportSecurity(new StrictTransportSecurity
-        {
-          MaxAge = TimeSpan.FromDays(1),
-          IncludeSubdomains = true,
-          Preload = false
-        });
+        //builder.SetStrictTransportSecurity(new StrictTransportSecurity
+        //{
+        //  MaxAge = TimeSpan.FromDays(1),
+        //  IncludeSubdomains = true,
+        //  Preload = false
+        //});
 
-        builder.SetPublicKeyPinning(new PublicKeyPinning
-        {
-          MaxAge = TimeSpan.FromDays(10),
-          IncludeSubdomains = true,
-          Pins = new List<string> {
-              "yh0kYiYm4YN+0DAKp4bB16pGqrQq9btXHMeR9jz834o=", // current certificate
-              "YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=", // Let's Encrypt Authority X3
-              "SEnt86CqqSYlSIlLcfnKdJdoS8NJG1EG+/5b5qtvmUY="  // backup cert
-              }
-        });
+        //builder.SetPublicKeyPinning(new PublicKeyPinning
+        //{
+        //  MaxAge = TimeSpan.FromDays(10),
+        //  IncludeSubdomains = true,
+        //  Pins = new List<string> {
+        //      "yh0kYiYm4YN+0DAKp4bB16pGqrQq9btXHMeR9jz834o=", // current certificate
+        //      "YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=", // Let's Encrypt Authority X3
+        //      "SEnt86CqqSYlSIlLcfnKdJdoS8NJG1EG+/5b5qtvmUY="  // backup cert
+        //      }
+        //});
 
         builder.SetContentSecurityPolicy(new ContentSecurityPolicy()
         {

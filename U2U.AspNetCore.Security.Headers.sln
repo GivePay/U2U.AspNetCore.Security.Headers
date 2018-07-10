@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U2U.AspNetCore.Security.Headers", "U2U.AspNetCore.Security.Headers\U2U.AspNetCore.Security.Headers.csproj", "{4CFC7DC8-C53F-4E48-AC01-ADA8A207CCB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U2U.AspNetCore.Security.Headers", "U2U.AspNetCore.Security.Headers\U2U.AspNetCore.Security.Headers.csproj", "{4CFC7DC8-C53F-4E48-AC01-ADA8A207CCB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebSite", "TestWebSite\TestWebSite.csproj", "{423E1E11-B2DE-4DCE-9B7C-13207ED1577C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWebSite", "TestWebSite\TestWebSite.csproj", "{423E1E11-B2DE-4DCE-9B7C-13207ED1577C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U2U.AspNetCore.Security.Headers.TagHelpers", "U2U.AspNetCore.Security.Headers.TagHelpers\U2U.AspNetCore.Security.Headers.TagHelpers.csproj", "{E42ED54A-B263-4DF5-938C-9D736D7F26A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,8 +43,23 @@ Global
 		{423E1E11-B2DE-4DCE-9B7C-13207ED1577C}.Release|x64.Build.0 = Release|Any CPU
 		{423E1E11-B2DE-4DCE-9B7C-13207ED1577C}.Release|x86.ActiveCfg = Release|Any CPU
 		{423E1E11-B2DE-4DCE-9B7C-13207ED1577C}.Release|x86.Build.0 = Release|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Debug|x64.Build.0 = Debug|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Debug|x86.Build.0 = Debug|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Release|x64.ActiveCfg = Release|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Release|x64.Build.0 = Release|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Release|x86.ActiveCfg = Release|Any CPU
+		{E42ED54A-B263-4DF5-938C-9D736D7F26A4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C78A193-0372-48D7-B323-FBCC4766E27D}
 	EndGlobalSection
 EndGlobal

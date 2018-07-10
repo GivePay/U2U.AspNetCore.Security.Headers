@@ -1,5 +1,4 @@
-﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
-@using TestWebSite.Controllers
+﻿@using TestWebSite.Controllers
 
 <!DOCTYPE html>
 <html>
@@ -18,9 +17,8 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-    @Html.Raw(JavaScriptSnippet.FullScript)
     @RenderSection("Styles", required: false)
-</body>
+
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
