@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <OutputType>library</OutputType>
-    <VersionPrefix>2.1.1</VersionPrefix>
+    <VersionPrefix>2.1.1.1</VersionPrefix>
     <PackageId>GivePay.U2U.AspNetCore.SecurityHeaders</PackageId>
  </PropertyGroup>
    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
