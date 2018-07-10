@@ -101,7 +101,15 @@ public class ContentSecurityPolicy
     /// </summary>
     public List<string> ObjectSrc { get; set; }
 
+    /// <summary>
+    /// Defines valid sources of workers
+    /// </summary>
     public List<string> WorkerSrc { get; set; }
+
+    /// <summary>
+    /// Defines valid sources for child frames
+    /// </summary>
+    public List<string> FramesSrc { get; set; }
 
     /// <summary>
     /// Defines valid sources of audio and video, eg HTML5 <audio>, <video> elements.
@@ -201,10 +209,17 @@ public class ContentSecurityPolicy
                .AppendDirectiveSeperator();
         }
 
-        if (this.WorkerSrc != null && this.FontSrc.Any())
+        if (this.WorkerSrc != null && this.WorkerSrc.Any())
         {
             csp.Append($"worker-src")
                 .AppendContentSources(this.WorkerSrc)
+                .AppendDirectiveSeperator();
+        }
+
+        if (this.FramesSrc != null && this.FramesSrc.Any())
+        {
+            csp.Append($"frame-src")
+                .AppendContentSources(this.FramesSrc)
                 .AppendDirectiveSeperator();
         }
 
